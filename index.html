@@ -1,126 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Developer Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#1D4ED8',
-            secondary: '#93C5FD',
-            accent: '#FACC15',
-            light: '#F3F4F6',
-            dark: '#1F2937'
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1D4ED8",
+              secondary: "#93C5FD",
+              accent: "#FACC15",
+              light: "#F3F4F6",
+              dark: "#1F2937",
+            },
+            backgroundImage: {
+              "gradient-soft":
+                "linear-gradient(to right, #cbd5e1, #93c5fd, #60a5fa)",
+            },
           },
-          backgroundImage: {
-            'gradient-soft': 'linear-gradient(to right, #cbd5e1, #93c5fd, #60a5fa)'
-          }
-        }
-      }
-    }
-  </script>
-</head>
+        },
+      };
+    </script>
+  </head>
 
-<body class="bg-gradient-soft text-dark font-sans min-h-screen">
-  <!-- Navbar -->
-  <header class="shadow-md fixed top-0 left-0 w-full bg-white bg-opacity-90 z-50">
-    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
-      <h1 class="text-xl font-bold text-primary">Portfolio</h1>
-      <ul class="flex gap-6 text-sm font-medium">
-        <li><a href="#home" class="hover:text-accent">Home</a></li>
-        <li><a href="#about" class="hover:text-accent">About</a></li>
-        <li><a href="#education" class="hover:text-accent">Education</a></li>
-        <li><a href="#skills" class="hover:text-accent">Skills</a></li>
-        <li><a href="#projects" class="hover:text-accent">Projects</a></li>
-        <li><a href="#certification" class="hover:text-accent">Certifications</a></li>
-      </ul>
-    </nav>
-  </header>
+  <body class="bg-gradient-soft text-dark font-sans min-h-screen">
+    <!-- Navbar -->
+    <header
+      class="shadow-md fixed top-0 left-0 w-full bg-white bg-opacity-90 z-50"
+    >
+      <nav
+        class="container mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <h1 class="text-xl font-bold text-primary">Portfolio</h1>
+        <ul class="flex gap-6 text-sm font-medium">
+          <li><a href="#home" class="hover:text-accent">Home</a></li>
+          <li><a href="#about" class="hover:text-accent">About</a></li>
+          <li><a href="#education" class="hover:text-accent">Education</a></li>
+          <li><a href="#skills" class="hover:text-accent">Skills</a></li>
+          <li><a href="#projects" class="hover:text-accent">Projects</a></li>
+          <li>
+            <a href="#certification" class="hover:text-accent"
+              >Certifications</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- Home Section -->
-  <section id="home" class="min-h-screen flex flex-col md:flex-row items-center justify-center gap-8 pt-24 text-white">
-    <img src="udayimg2.jpg" alt="Developer" class="w-48 h-48 rounded-full shadow-lg">
-    <div class="text-center md:text-left">
-      <h2 class="text-4xl font-bold mb-4">Hi, UDAY T K I'm a Web Developer</h2>
-      <p class="text-light">Creating modern, responsive websites using HTML, CSS, JS & Tailwind</p>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="py-20 px-6 bg-white">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-2xl font-bold mb-4 border-b pb-2 text-primary">About Me</h2>
-      <p class="text-gray-700">I'm a passionate web developer with a focus on building user-friendly, accessible and fast websites using modern web technologies. I love learning and building useful things on the web.</p>
-    </div>
-  </section>
-
-  <!-- Education Section -->
-  <section id="education" class="py-20 px-6 bg-light">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-2xl font-bold mb-4 border-b pb-2 text-primary">Education</h2>
-      <ul class="list-disc list-inside text-gray-800">
-        <li>Bachelor of Computer Applications -Vidyavahini First Grade College, Tumkur. ( CGPA : 9.03 ) (2021 - 2024)</li>
-        <li>Master of Computer Applications -  Dayananda Sagar Academy of Technology and Management, Bengaluru. (2024 - 2026)</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Technical Skills Section -->
-  <section id="skills" class="py-20 px-6 bg-white">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-2xl font-bold mb-4 border-b pb-2 text-primary">Technical Skills</h2>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-gray-800">
-        <span class="bg-secondary text-white px-3 py-1 rounded">HTML</span>
-        <span class="bg-secondary text-white px-3 py-1 rounded">CSS</span>
-
-        <span class="bg-secondary text-white px-3 py-1 rounded">Tailwind CSS</span>
-        <span class="bg-secondary text-white px-3 py-1 rounded">C Programming</span>
-        <span class="bg-secondary text-white px-3 py-1 rounded">Java</span>
-
-        <span class="bg-secondary text-white px-3 py-1 rounded">Git & GitHub</span>
+    <!-- Home Section -->
+    <section
+      id="home"
+      class="min-h-screen flex flex-col md:flex-row items-center justify-center gap-8 pt-24 text-white"
+    >
+      <img
+        src="udayimg2.jpg"
+        alt="Developer"
+        class="w-48 h-48 rounded-full shadow-lg"
+      />
+      <div class="text-center md:text-left">
+        <h2 class="text-4xl font-bold mb-4">
+          Hi, UDAY T K I'm a Web Developer
+        </h2>
+        <p class="text-light">
+          Creating modern, responsive websites using HTML, CSS, JS & Tailwind
+        </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="py-20 px-6 bg-light">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-2xl font-bold mb-4 border-b pb-2 text-primary">Projects</h2>
-      <ul class="space-y-4 text-gray-800">
-        <li class="bg-white p-4 shadow-md rounded">
-          <h3 class="font-semibold text-lg text-primary">1.</h3>
-          <p> Designed and developed a modern, responsive portfolio website using HTML, CSS, JavaScript, and
-            Tailwind.</p>
-        </li>
-        <li class="bg-white p-4 shadow-md rounded">
-          <h3 class="font-semibold text-lg text-primary">Amazon-Inspired E-Commerce Frontend Clone</h3>
-          <p>Developed a Amazon-like e-commerce homepage using HTML and CSS, mimicking the layout, design of the
-            Amazon website.</p>
-        </li>
-      </ul>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 bg-white">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl font-bold mb-4 border-b pb-2 text-primary">
+          About Me
+        </h2>
+        <p class="text-gray-700">
+          I'm a passionate web developer with a focus on building user-friendly,
+          accessible and fast websites using modern web technologies. I love
+          learning and building useful things on the web.
+        </p>
+      </div>
+    </section>
 
-  <!-- Certifications Section -->
-  <section id="certification" class="py-20 px-6 bg-white">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-2xl font-bold mb-4 border-b pb-2 text-primary">Certifications</h2>
-      <ul class="list-disc list-inside text-gray-800">
-        <li> 7 day Bootcamp on Git and GitHub Version Control System course by Devtowm</li>
-    
-        <li>Campus to Career - Capgemini & TNS Foundation</li>
-      </ul>
-    </div>
-  </section>
+    <!-- Education Section -->
+    <section id="education" class="py-20 px-6 bg-light">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl font-bold mb-4 border-b pb-2 text-primary">
+          Education
+        </h2>
+        <ul class="list-disc list-inside text-gray-800">
+          <li>
+            Bachelor of Computer Applications -Vidyavahini First Grade College,
+            Tumkur. ( CGPA : 9.03 ) (2021 - 2024)
+          </li>
+          <li>
+            Master of Computer Applications - Dayananda Sagar Academy of
+            Technology and Management, Bengaluru. (2024 - 2026)
+          </li>
+        </ul>
+      </div>
+    </section>
 
-  <footer class="py-6 bg-dark text-center text-light text-sm">
-    &copy; 2025 Web Developer Portfolio. All rights reserved.
-  </footer>
-</body>
+    <!-- Technical Skills Section -->
+    <section id="skills" class="py-20 px-6 bg-white">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl font-bold mb-4 border-b pb-2 text-primary">
+          Technical Skills
+        </h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-gray-800">
+          <span class="bg-secondary text-white px-3 py-1 rounded">HTML</span>
+          <span class="bg-secondary text-white px-3 py-1 rounded">CSS</span>
 
+          <span class="bg-secondary text-white px-3 py-1 rounded"
+            >Tailwind CSS</span
+          >
+          <span class="bg-secondary text-white px-3 py-1 rounded"
+            >C Programming</span
+          >
+          <span class="bg-secondary text-white px-3 py-1 rounded">Java</span>
+
+          <span class="bg-secondary text-white px-3 py-1 rounded"
+            >Git & GitHub</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 bg-light">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl font-bold mb-4 border-b pb-2 text-primary">
+          Projects
+        </h2>
+        <ul class="space-y-4 text-gray-800">
+          <li class="bg-white p-4 shadow-md rounded">
+            <h3 class="font-semibold text-lg text-primary">
+              1.Portfolio website
+            </h3>
+            <p>
+              Designed and developed a modern, responsive portfolio website
+              using HTML, CSS, JavaScript, and Tailwind.
+            </p>
+          </li>
+          <li class="bg-white p-4 shadow-md rounded">
+            <h3 class="font-semibold text-lg text-primary">
+              Project 2. Amazon-Inspired E-Commerce Frontend Clone
+            </h3>
+            <p>
+              Developed a Amazon-like e-commerce homepage using HTML and CSS,
+              mimicking the layout, design of the Amazon website.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certification" class="py-20 px-6 bg-white">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl font-bold mb-4 border-b pb-2 text-primary">
+          Certifications
+        </h2>
+        <ul class="list-disc list-inside text-gray-800">
+          <li>
+            7 day Bootcamp on Git and GitHub Version Control System course by
+            Devtowm
+          </li>
+
+          <li>Campus to Career - Capgemini & TNS Foundation</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="py-6 bg-dark text-center text-light text-sm">
+      &copy; 2025 Web Developer Portfolio. All rights reserved.
+    </footer>
+  </body>
 </html>
